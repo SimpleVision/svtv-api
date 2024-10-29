@@ -75,4 +75,4 @@ docker run -p  10000:10000 registry.cn-hangzhou.aliyuncs.com/douyasi/svtv-api:la
 }
 ```
 
-直接返回 `xml` 的界面单，需要前端自行处理，如根据当前时间解析出正在播放的电视节目。
+直接返回 `xml` 的节目单，需要前端自行处理，如根据当前时间解析出正在播放的电视节目。
