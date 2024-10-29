@@ -28,7 +28,7 @@ http://localhost:10000/svtv/tv-guide?channel_id=CCTV1
 # mac 下请使用 `brew install xq` 安装依赖，其它环境参考官网 ref: https://github.com/sibprogrammer/xq
 # docker 镜像已内置 xq 组件
 # 服务器推荐 `docker` 部署运行
-docker run -p  10000:10000 registry.cn-hangzhou.aliyuncs.com/douyasi/svtv-api:latest
+docker run -p 10000:10000 registry.cn-hangzhou.aliyuncs.com/douyasi/svtv-api:latest
 ```
 
 ### 响应示例
@@ -76,3 +76,13 @@ docker run -p  10000:10000 registry.cn-hangzhou.aliyuncs.com/douyasi/svtv-api:la
 ```
 
 直接返回 `xml` 的节目单，需要前端自行处理，如根据当前时间解析出正在播放的电视节目。
+
+### 参考资料
+
+`GitHub` 上一些 `IPTV` 源，不保证最新且可用，请自行验证。
+
+- [yuanzl77/IPTV](https://github.com/yuanzl77/IPTV)
+- [suxuang/myIPTV](https://github.com/suxuang/myIPTV)
+- [HerbertHe/iptv-sources](https://github.com/HerbertHe/iptv-sources)
+- [fanmingming/live](https://github.com/fanmingming/live)
+- [SPX372928/MyIPTV](https://github.com/SPX372928/MyIPTV)
