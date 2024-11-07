@@ -8,10 +8,10 @@ import os
 import xml.etree.ElementTree as EleTree
 from urllib.parse import urlparse
 
-def download_file(url):
+def download_file(url, ext='.xml'):
     datetime_str = time.strftime('%Y%m%d%H', time.localtime(time.time()))
     hash_file_name = hashlib.md5((url + datetime_str).encode('utf-8')).hexdigest()
-    file_path = './download/' + datetime_str + '_' + hash_file_name + '.xml'
+    file_path = './download/' + datetime_str + '_' + hash_file_name + ext
     re = os.path.exists(file_path)
     if re:
         return file_path
