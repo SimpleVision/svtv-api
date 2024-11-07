@@ -59,7 +59,11 @@ class Parser:
         parser = M3uParser(timeout=5)
         # ref: https://github.com/pawanpaudel93/m3u-parser
         # Parse the m3u file
-        parser.parse_m3u(url, schemes=['http', 'https'], check_live=False)
+
+        # sometimes fetch web url maybe got error
+        # so, just download it first
+        local_m3u_file = download_file(url, '.m3u')
+        parser.parse_m3u(local_m3u_file, schemes=['http', 'https'], check_live=False)
         items = parser.get_list()
         categories = dict()
         grouped_channels = dict()
