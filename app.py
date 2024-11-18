@@ -16,7 +16,7 @@ def download_file(url, ext='.xml'):
     if re:
         return file_path
     else:
-        response = requests.get(url, stream=True)
+        response = requests.get(url, stream=True, verify=False)
         response.raise_for_status()
         with open(file_path, 'wb') as file:
             for chunk in response.iter_content(chunk_size=8192):
