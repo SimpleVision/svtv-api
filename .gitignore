@@ -1,0 +1,6 @@
+static/*.json
+download/*.xml
+download/*.m3u
+
+.venv/
+.vscode/
