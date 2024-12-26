@@ -14,7 +14,7 @@ pip3 install -r requirements.txt
 # 启动 http 服务，指定端口 10000 （可修改为其它端口）
 python3 app.py 10000
 # m3u 直播频道信息接口：频道分类且支持多源的响应结果
-http://localhost:10000/svtv/m3u-parser?url=https://ghp.ci/raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
+http://localhost:10000/svtv/m3u-parser?url=https://ghgo.xyz/raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
 # 如果解析没有异常，会回显新的静态文件地址（按天缓存，避免目标 `m3u` 更新）
 # 然后访问该静态地址即可，如
 http://localhost:10000/static/20241028_3aa586d1511102767d7bc7d238d547d9.json

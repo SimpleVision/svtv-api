@@ -45,7 +45,7 @@ def write_to_file(url, res_data):
 class Parser:
 
     def GET(self):
-        # https://ghp.ci/raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
+        # https://ghgo.xyz/raw.githubusercontent.com/suxuang/myIPTV/main/ipv6.m3u
         url = web.input().get('url')
         out_file, re = get_hash_file(url)
         if re:
